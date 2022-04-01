@@ -1,0 +1,76 @@
+.render {
+  max-width: 276px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.add-button {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.task-form {
+  width: 100%;
+  padding: 6px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.task-title {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  border: 1px solid rgba(70, 70, 70);
+}
+
+.task-description {
+  width: 100%;
+  border-radius: 3px;
+  padding: 8px;
+  resize: none;
+}
+
+.task-btn {
+  background-color: teal;
+  color: whitesmoke;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 6px 9px;
+  border-radius: 3px;
+  align-self: flex-start;
+  margin: 10px 0;
+
+  &_close {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+    margin-left: 10px;
+
+    svg.task_btn-close:focus {
+      border: 1px solid rgba(70, 70, 70);
+    }
+  }
+
+  &:focus {
+    outline: 2px solid rgb(70, 70, 70);
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.error-input {
+  outline: 2px solid red;
+}

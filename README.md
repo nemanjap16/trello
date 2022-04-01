@@ -1,4 +1,4 @@
-# 👋 Welcome to Webpack 5 React starter!
+# 👋 Welcome to Trello clone app!
 
 This project has been created using **Webpack**, you can now run:
 
@@ -20,11 +20,10 @@ npm run build
 
 to bundle your application
 
-## This project is configured for quick start
+### This project is created with my webpack 5 React setup
 
-- you can use css
-- or scss
-- includes css reset
-- includes linting
-- babel
-- postcss
+- create task
+- edit task
+- delete task
+- create new task list
+- you can use drag and drop

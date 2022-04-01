@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 /* Box sizing rules */
 *,
 *::before,
@@ -37,7 +35,6 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Popins', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -68,6 +65,7 @@ button,
 textarea,
 select {
   font: inherit;
+  font-size: 14px;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

@@ -1,0 +1,28 @@
+.header {
+  background-color: #011836;
+  width: 100%;
+  height: 7vh;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Merienda', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    color: #fff;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

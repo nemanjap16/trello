@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
+import { store } from './app/store.js';
+import { persistStore } from 'redux-persist';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Provider } from 'react-redux';
 // styles
-import './global.reset.css';
+import './global.css';
 import './styles/index.scss';
 
 const app = document.getElementById('app');
 
-ReactDOM.render(<App />, app);
+let persistor = persistStore(store);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>,
+  app
+);
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
