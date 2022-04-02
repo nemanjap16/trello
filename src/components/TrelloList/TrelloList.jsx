@@ -17,17 +17,20 @@ const TrelloList = ({ list, listId }) => {
   return (
     <Droppable droppableId={String(list.id)}>
       {(provided) => (
-        <div className="wrapper" {...provided.droppableProps} ref={provided.innerRef}>
-          <div className="list">
-            <div className="list__details">
-              <h1 className="list__title">{list.title}</h1>
-              <MdDelete className="list__delete-btn" onClick={() => deleteListHandler(list.id)} />
-            </div>
+        <div className="list" {...provided.droppableProps} ref={provided.innerRef}>
+          <div className="list__header">
+            <h4>{list.title}</h4>
+            <MdDelete className="list__delete-btn" onClick={() => deleteListHandler(list.id)} />
           </div>
-          {list.tasks.map((task, i) => (
-            <TrelloCard key={task.id} task={task} index={i} listId={listId} />
-          ))}
-          <AddButton title={'card'} id={list.id} />
+
+          <div className="list__body">
+            <div className="list__card">
+              <AddButton title={'card'} id={list.id} />
+            </div>
+            {list.tasks.map((task, i) => (
+              <TrelloCard key={task.id} task={task} index={i} listId={listId} />
+            ))}
+          </div>
           {provided.placeholder}
         </div>
       )}
