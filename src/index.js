@@ -5,6 +5,7 @@ import { store } from './app/store.js';
 import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
+import Loader from './components/Loader/Loader.jsx';
 // styles
 import './global.css';
 import './styles/index.scss';
@@ -15,7 +16,7 @@ let persistor = persistStore(store);
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
+    <PersistGate loading={<Loader />} persistor={persistor}>
       <App />
     </PersistGate>
   </Provider>,
