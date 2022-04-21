@@ -27,3 +27,5 @@ to bundle your application
 - delete task
 - create new task list
 - you can use drag and drop
+
+### [Live preview](https://starlit-buttercream-4642cc.netlify.app/)
