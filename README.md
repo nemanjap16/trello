@@ -20,7 +20,7 @@ npm run build
 
 to bundle your application
 
-### This project is created with my webpack 5 React setup
+### In this app you can:
 
 - create task
 - edit task
